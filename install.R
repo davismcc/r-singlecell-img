@@ -7,35 +7,21 @@ biocLite()
 sc_pkgs <- c(
   "beachmat",
   "Canopy",
-  "clusterExperiment",
   "destiny",
   "edgeR",
   "GO.db",
   "goseq",
   "limma",
-  "MAST",
-  "monocle",
   "MultiAssayExperiment",
   "org.Hs.eg.db",
   "org.Mm.eg.db",
-  "pcaMethods",
-  "preprocessCore",
   "Rtsne",
-  "SC3",
   "scater",
-  # "scfind",
-  # "scmap",
-  "scone",
   "scran",
   "slalom",
   "snpStats",
-  # "sva",
-  # "TSCAN",
-  # "tximport",
-  # "variancePartition",
   "VariantAnnotation",
-  "vcfR",
-  "zinbwave"
+  "vcfR"
 )
 
 pkgs <- c(sc_pkgs)
@@ -52,13 +38,6 @@ pkgs_to_install <- pkgs_to_install[!(pkgs_to_install %in% ip)]
 biocLite(pkgs_to_install)
 
 devtools::install_github("davismcc/cardelino")
-# devtools::install_github("kieranrcampbell/ouija")
-# devtools::install_github(c("hemberg-lab/scRNA.seq.funcs",
-#                            "Vivianstats/scImpute",
-#                            "theislab/kBET",
-#                            "JustinaZ/pcaReduce",
-#                            "tallulandrews/M3Drop",
-#                            "jw156605/SLICER"))
 
 ## just in case there were warnings, we want to see them
 ## without having to scroll up:
