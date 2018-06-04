@@ -11,6 +11,7 @@ sc_pkgs <- c(
   "edgeR",
   "GO.db",
   "goseq",
+  "irlba",
   "limma",
   "MultiAssayExperiment",
   "org.Hs.eg.db",
