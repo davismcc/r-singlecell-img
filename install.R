@@ -38,7 +38,7 @@ pkgs_to_install <- pkgs_to_install[!(pkgs_to_install %in% ip)]
 
 biocLite(pkgs_to_install)
 
-devtools::install_github("davismcc/cardelino")
+devtools::install_github("PMBio/cardelino")
 
 ## just in case there were warnings, we want to see them
 ## without having to scroll up:
