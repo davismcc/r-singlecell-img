@@ -1,27 +1,23 @@
 ## install script for R pkgs
 source("https://bioconductor.org/biocLite.R")
 
-library(BiocInstaller) # shouldn't be necessary
-biocLite()
+install.packages("BiocManager")
 
 sc_pkgs <- c(
   "beachmat",
   "Canopy",
   "destiny",
   "edgeR",
-  "GO.db",
-  "goseq",
   "irlba",
   "limma",
   "MultiAssayExperiment",
   "org.Hs.eg.db",
   "org.Mm.eg.db",
+  "pcaMethods",
   "Rtsne",
   "scater",
   "scran",
   "slalom",
-  "snpStats",
-  "VariantAnnotation",
   "vcfR"
 )
 
@@ -36,7 +32,7 @@ ip.db <- installed.packages()
 ip <- rownames(ip.db)
 pkgs_to_install <- pkgs_to_install[!(pkgs_to_install %in% ip)]
 
-biocLite(pkgs_to_install)
+BiocManager::install(pkgs_to_install)
 
 devtools::install_github("PMBio/cardelino")
 
