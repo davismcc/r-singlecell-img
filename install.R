@@ -1,10 +1,7 @@
 ## install script for R pkgs
-source("https://bioconductor.org/biocLite.R")
-
 install.packages("BiocManager")
 
 sc_pkgs <- c(
-  "beachmat",
   "Canopy",
   "destiny",
   "edgeR",
@@ -23,7 +20,7 @@ sc_pkgs <- c(
 
 pkgs <- c(sc_pkgs)
 
-ap.db <- available.packages(contrib.url(biocinstallRepos()))
+ap.db <- available.packages(contrib.url(BiocManager::repositories()))
 ap <- rownames(ap.db)
 pkgs_to_install <- pkgs[pkgs %in% ap]
 
@@ -46,6 +43,3 @@ if (!is.null(warnings()))
   if (length(grep("is not available|had non-zero exit status", w)))
     quit("no", 1L)
 }
-
-suppressWarnings(BiocInstaller::biocValid(fix=TRUE, ask=FALSE))
-
