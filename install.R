@@ -11,6 +11,7 @@ sc_pkgs <- c(
   "org.Hs.eg.db",
   "org.Mm.eg.db",
   "pcaMethods",
+  "RCurl",
   "Rtsne",
   "scater",
   "scran",
