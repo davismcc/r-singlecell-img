@@ -10,6 +10,7 @@ sc_pkgs <- c(
   "MultiAssayExperiment",
   "org.Hs.eg.db",
   "org.Mm.eg.db",
+  "neutralitytestr",
   "pcaMethods",
   "RCurl",
   "Rtsne",
