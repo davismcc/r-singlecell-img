@@ -6,6 +6,7 @@ sc_pkgs <- c(
   "destiny",
   "edgeR",
   "irlba",
+  "latex2exp",
   "limma",
   "MultiAssayExperiment",
   "org.Hs.eg.db",
@@ -17,6 +18,7 @@ sc_pkgs <- c(
   "scater",
   "scran",
   "slalom",
+  "variancePartition",
   "vcfR"
 )
 
