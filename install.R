@@ -37,6 +37,7 @@ pkgs_to_install <- pkgs_to_install[!(pkgs_to_install %in% ip)]
 BiocManager::install(pkgs_to_install)
 
 devtools::install_github("PMBio/cardelino")
+devtools::install_github("kgori/sigfit", build_opts = c("--no-resave-data", "--no-manual"))
 
 ## just in case there were warnings, we want to see them
 ## without having to scroll up:
