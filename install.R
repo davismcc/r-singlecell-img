@@ -5,6 +5,7 @@ sc_pkgs <- c(
   "Canopy",
   "destiny",
   "edgeR",
+  "GenomicRanges",
   "irlba",
   "latex2exp",
   "limma",
